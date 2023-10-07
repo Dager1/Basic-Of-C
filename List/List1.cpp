@@ -31,4 +31,13 @@ int main()
         cout << i << " ";
     }
     cout << endl;
+
+    // initalizing a new list
+    list<int> u(15, 9);
+    cout << "The new list u ";
+    for (int i : u)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 }
