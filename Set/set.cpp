@@ -32,4 +32,11 @@ int main()
         cout << i << endl;
     }
     cout << endl;
+
+    // count method informs us if an element is present or not
+    cout << "Using count " << ((se.count(59)) ? "Yes" : "No");
+
+    // using find method to find the postion of the valuse
+    set<int>::iterator itrr = se.find(56);
+    // cout << "The postion of 56: " << itrr;
 }
