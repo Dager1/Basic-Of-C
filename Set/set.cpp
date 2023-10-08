@@ -7,17 +7,29 @@ int main()
     // set return valuse in sorted order
     // unoder set are slow cause it return in unsorted order
     // does not allow dubplication of valuse
+    // Big O(logn)
 
-    set<int> set;
-    set.insert(31);
-    set.insert(59);
-    set.insert(56);
-    set.insert(14);
-    set.insert(14);
-    set.insert(56);
+    set<int> se;
+    se.insert(31);
+    se.insert(59);
+    se.insert(56);
+    se.insert(14);
+    se.insert(14);
+    se.insert(56);
 
-    for (auto i : set)
+    for (auto i : se)
     {
         cout << i << endl;
     }
+    cout << endl;
+
+    set<int>::iterator it = se.begin();
+    advance(it, 1);
+    se.erase(it);
+
+    for (auto i : se)
+    {
+        cout << i << endl;
+    }
+    cout << endl;
 }
