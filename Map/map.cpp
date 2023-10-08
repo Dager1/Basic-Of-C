@@ -20,4 +20,12 @@ int main()
         cout << i.first << endl;
     }
     cout << endl;
+
+    cout << "befor erase" << endl;
+    m.erase(2);
+    for (auto i : m)
+    {
+        cout << i.first << endl;
+    }
+    cout << endl;
 }
