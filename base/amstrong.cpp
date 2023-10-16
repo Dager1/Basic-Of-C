@@ -1,25 +1,27 @@
 #include <iostream>
+#include <cmath> // Include cmath for pow()
 using namespace std;
 
 bool isArmstrong(int n)
 {
     int temp = n;
     int ans = 0;
-
+    string s = to_string(n);
+    int size = s.size();
     while (temp > 0)
     {
         int d = temp % 10;
-        ans = ans + (d * d * d);
+        ans = ans + pow(d, size);
         temp = temp / 10;
     }
 
     if (n == ans)
     {
-        return true;
+        return 1;
     }
     else
     {
-        return false;
+        return 0;
     }
 }
 
