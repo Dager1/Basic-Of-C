@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector> //have to include the standar library
 using namespace std;
 int print(int n, int sum)
 {
@@ -12,7 +11,6 @@ int print(int n, int sum)
 }
 int main()
 {
-    vector<int> arr;
     int n;
     cout << "Enter the value :";
     cin >> n;
